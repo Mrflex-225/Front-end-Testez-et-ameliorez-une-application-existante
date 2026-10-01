@@ -1,0 +1,38 @@
+<h2>Détail de l'étudiant</h2>
+@if (errorMessage) {
+  <p>
+    {{ errorMessage }}
+  </p>
+}
+
+@if (student) {
+  <p>
+    <strong>ID :</strong>
+    {{ student.id }}
+  </p>
+  <p>
+    <strong>Prénom :</strong>
+    {{ student.firstName }}
+  </p>
+  <p>
+    <strong>Nom :</strong>
+    {{ student.lastName }}
+  </p>
+  <p>
+    <strong>Email :</strong>
+    {{ student.email }}
+  </p>
+  <a
+    [routerLink]="[
+      '/students',
+      student.id,
+      'edit'
+    ]"
+  >
+    Modifier
+  </a>
+}
+<br>
+<a routerLink="/students">
+  Retour
+</a>

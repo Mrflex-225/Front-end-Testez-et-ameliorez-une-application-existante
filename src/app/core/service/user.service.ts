@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Register } from '../models/Register';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { LoginRequestDTO } from '../models/login-request.dto';
 
 @Injectable({
   providedIn: 'root'
@@ -11,5 +12,15 @@ export class UserService {
 
   register(user: Register): Observable<Object> {
     return this.httpClient.post('/api/register', user);
+  }
+
+  login(loginRequest : LoginRequestDTO) : Observable<string> {
+    return this.httpClient.post(
+      'api/login',
+      loginRequest,
+      {
+        responseType:'text'
+      }
+    )
   }
 }

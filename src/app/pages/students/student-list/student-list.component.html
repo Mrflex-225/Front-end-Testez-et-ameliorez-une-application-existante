@@ -1,0 +1,72 @@
+<h2>Liste des étudiants</h2>
+
+<a routerLink="/students/new">
+  Ajouter un étudiant
+</a>
+
+@if (errorMessage) {
+  <p>{{ errorMessage }}</p>
+}
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Prénom</th>
+      <th>Nom</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    @for (student of students; track student.id) {
+      <tr>
+        <td>
+          {{ student.id }}
+        </td>
+        <td>
+          {{ student.firstName }}
+        </td>
+        <td>
+          {{ student.lastName }}
+        </td>
+        <td>
+          {{ student.email }}
+        </td>
+        <td>
+          <a
+            [routerLink]="[
+              '/students',
+              student.id
+            ]"
+          >
+            Voir
+          </a>
+          &nbsp;
+          <a
+            [routerLink]="[
+              '/students',
+              student.id,
+              'edit'
+            ]"
+          >
+            Modifier
+          </a>
+          &nbsp;
+          <button
+            type="button"
+            (click)="deleteStudent(student.id)"
+          >
+            Supprimer
+          </button>
+
+        </td>
+
+      </tr>
+
+    }
+
+  </tbody>
+
+</table>

@@ -1,0 +1,182 @@
+{
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/app.component.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/app.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/app.config.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/app.config.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/app.routes.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/app.routes.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/guards/auth.guard.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/guards/auth.guard.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/interceptors/auth.interceptor.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/interceptors/auth.interceptor.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/models/login-request.dto.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/models/login-request.dto.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/models/Register.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/models/Register.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/models/student-request.dto.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/models/student-request.dto.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/models/student-response.dto.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/models/student-response.dto.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/service/auth.service.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/service/auth.service.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/service/student.service.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/service/student.service.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/service/user-mock.service.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/service/user-mock.service.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/service/user.service.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/core/service/user.service.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/login/login.component.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/login/login.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/register/register.component.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/register/register.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/students/student-create/student-create.component.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/students/student-create/student-create.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/students/student-detail/student-detail.component.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/students/student-detail/student-detail.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/students/student-edit/student-edit.component.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/students/student-edit/student-edit.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/students/student-list/student-list.component.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/pages/students/student-list/student-list.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/shared/material.module.ts": {
+    "path": "C:/Users/desig/Documents/Formation DEVOPS/Formation-devOps/PROJET2/Front-end---Testez-et-am-liorez-une-application-existante/src/app/shared/material.module.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  }
+}
