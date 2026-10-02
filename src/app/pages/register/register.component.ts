@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../../shared/material.module';
@@ -20,6 +20,10 @@ export class RegisterComponent implements OnInit {
   private destroyRef = inject(DestroyRef);
   registerForm: FormGroup = new FormGroup({});
   submitted: boolean = false;
+
+  isLoading = signal<boolean>(false);
+  errorMessage = signal<string | null>(null);
+  successMessage = signal<string | null>(null);
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group(
@@ -47,18 +51,35 @@ export class RegisterComponent implements OnInit {
       login: this.registerForm.get('login')?.value,
       password: this.registerForm.get('password')?.value
     };
+
+    this.isLoading.set(true);
+    this.errorMessage.set(null);
+    this.successMessage.set(null);
     this.userService.register(registerUser)
       .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(
-      () => {
-        alert('SUCCESS!! :-)');
-        this.router.navigate(['/login']);
-      },
-    );
+      .subscribe({
+        next: () => {
+          this.isLoading.set(false);
+          this.successMessage.set('Inscription réussie ! Redirection...');
+          
+          setTimeout(() => {
+            this.router.navigate(['/login']);
+          }, 1500);
+        },
+        error: (err) => {
+          this.isLoading.set(false);
+          this.errorMessage.set(err.message || 'Une erreur est survenue lors de l\'inscription.');
+        }
+      });
   }
 
   onReset(): void {
     this.submitted = false;
     this.registerForm.reset();
   }
+
+    goToLogin():void{
+    this.router.navigate(['/login']);
+  }
+
 }

@@ -1,4 +1,10 @@
-<h2>Liste des étudiants</h2>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <h2>Liste des étudiants</h2>
+  <!-- Bouton de déconnexion -->
+  <button type="button" (click)="logout()" class="btn btn-danger" style="background-color: #ff4d4d; color: white; border: none; padding: 8px 15px; cursor: pointer;">
+    Se déconnecter
+  </button>
+</div>
 
 <a routerLink="/students/new">
   Ajouter un étudiant

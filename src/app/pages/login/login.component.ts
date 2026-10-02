@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { LoginRequestDTO } from '../../core/models/login-request.dto';
 import { UserService } from '../../core/service/user.service';
@@ -17,7 +17,9 @@ export class LoginComponent {
     login:'',
     password:''
   };
-
+isLoading = signal<boolean>(false);
+  errorMessage = signal<string | null>(null);
+  successMessage = signal<string | null>(null);
 constructor(
   private userService: UserService,
   private authService: AuthService,
@@ -25,8 +27,13 @@ constructor(
 ) {}
 
   login():void{
+    this.isLoading.set(true);
+    this.errorMessage.set(null);
+    this.successMessage.set(null);
     this.userService.login(this.loginRequest).subscribe({
       next:(token) => {
+        this.isLoading.set(false);
+        this.successMessage.set('Connexion réussie ! Redirection...');
         console.log('AUTH SERVICE =', this.authService);
 console.log('SET TOKEN =', this.authService.setToken);
         console.log('Token reçu',token);
@@ -36,9 +43,15 @@ console.log('SET TOKEN =', this.authService.setToken);
         ]);
       },
       error: (error) => {
-        console.error('Erreur de connexion :',error)
+        this.isLoading.set(false);
+        // Grâce à l'intercepteur d'erreurs, error.message contient le message propre
+        this.errorMessage.set(error.message || 'Identifiants incorrects.');
       }
       });
+  }
+
+  goToRegister():void{
+    this.router.navigate(['/register']);
   }
 
 }

@@ -11,7 +11,7 @@ import { StudentListComponent } from './pages/students/student-list/student-list
 export const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
+    component: LoginComponent,
   },
   {
     path: 'register',

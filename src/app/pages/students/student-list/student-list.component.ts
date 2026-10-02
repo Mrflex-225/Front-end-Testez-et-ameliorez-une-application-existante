@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 import { StudentService } from '../../../core/service/student.service';
 import { StudentResponseDTO } from '../../../core/models/student-response.dto';
+import { AuthService } from '../../../core/service/auth.service';
 
 @Component({
   selector: 'app-student-list',
@@ -17,7 +18,9 @@ export class StudentListComponent implements OnInit {
   students:StudentResponseDTO[] = [];
   errorMessage = '';
   constructor(
-    private studentService: StudentService
+    private studentService: StudentService,
+    private authService: AuthService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -56,5 +59,11 @@ export class StudentListComponent implements OnInit {
           'Erreur lors de la suppression';
       }
     });
+  }
+
+  logout(): void {
+    localStorage.removeItem('token'); 
+    
+    this.router.navigate(['/login']);
   }
 }

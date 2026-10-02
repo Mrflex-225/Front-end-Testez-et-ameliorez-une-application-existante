@@ -2,7 +2,18 @@
     <div class="login-card">
         <h2>Connexion</h2>
     <p class="subtitle">Connectez-vous à votre compte</p>
+@if (successMessage()) {
+            <div class="alert alert-success" style="color: green; margin-bottom: 15px;">
+                {{ successMessage() }}
+            </div>
+        }
 
+        <!-- Message d'Erreur -->
+        @if (errorMessage()) {
+            <div class="alert alert-danger" style="color: red; margin-bottom: 15px;">
+                {{ errorMessage() }}
+            </div>
+        }
         <form (ngSubmit)="login()" #loginForm="ngForm">
             <div class="form-group">
                 <label for="login">Login</label>
@@ -14,9 +25,16 @@
                 <input type="password" name="password" id="password" [(ngModel)]="loginRequest.password" required>
             </div>
 
-            <button type="submit">
-                Login
+           <button type="submit" [disabled]="isLoading() || loginForm.invalid">
+                @if (isLoading()) {
+                    <span>Connexion en cours...</span>
+                } @else {
+                    <span>Login</span>
+                }
             </button>
+            <button class="btn btn-secondary" (click)="goToRegister()">
+          Register
+        </button>
         </form>
     </div>
 </div>

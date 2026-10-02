@@ -1,6 +1,16 @@
 <div class="card m-3">
   <h5 class="card-header">Registration Form</h5>
   <div class="card-body">
+    @if (successMessage()) {
+    <div class="alert alert-success">
+      {{ successMessage() }}
+    </div>
+  }
+  @if (errorMessage()) {
+    <div class="alert alert-danger">
+      {{ errorMessage() }}
+    </div>
+  }
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
       <div class="form-row">
         <div class="form-group col-5">
@@ -74,7 +84,16 @@
         }
       </div>
       <div class="text-center">
-        <button class="btn btn-primary mr-1">Register</button>
+       <button type="submit" class="btn btn-primary" [disabled]="isLoading()">
+      @if (isLoading()) {
+        <span>Chargement...</span>
+      } @else {
+        <span>Register</span>
+      }
+    </button>
+    <button class="btn btn-secondary" type="reset" (click)="goToLogin()">
+          Login
+        </button>
         <button class="btn btn-secondary" type="reset" (click)="onReset()">
           Cancel
         </button>
